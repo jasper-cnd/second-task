@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 8% 28% 8% 28%;
+    background: hsl(30, 38%, 92%);
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    height: 95%;
+}
+.pro-img{
+    background-image: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px 0px 0px 9px;
+}
+.pro-info{
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    padding: 7% 8.5% 3% 8.5%;
+    border-radius: 0px 9px 9px 0px;
+}
+.pro-info p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+.pro-info h1{
+    font-family: 'Fraunces', serif;
+    color:  hsl(212, 21%, 14%);
+    font-size: 35px;
+    line-height: 35px;
+    margin: 3.5vh 0vh;
+}
+.pro-info .price{
+    color:  hsl(158, 36%, 37%);
+    display: flex
+}
+.pro-info .price span{
+    margin-left: 3vh;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+.pro-info a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 2vh 10vh;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 9px;
+}
+.pro-info a:hover{
+    cursor: pointer;
+}
+
+
+/* media query */
+@media (max-width: 375px) {
+    
+    body{
+        height: 100vh;
+        box-sizing: border-box;
+        padding: 2% 10% 2% 10%;
+        background: hsl(30, 38%, 92%);
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        height: 96%;
+    }
+    .pro-img{
+        background-image: url(./images/image-product-mobile.jpg);
+        border-radius: 9px 9px 0px 0px;
+    }
+    .pro-info{
+        padding: 4% 10% 3% 10%;
+        border-radius: 0px 0px 9px 9px;
+    }
+    .pro-info h1{
+        font-size: 33px;
+        line-height: 35px;
+        margin: 2vh 0vh;
+    }
+    .pro-info .price span{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: line-through;
+        color: hsl(228, 12%, 48%);
+    }
+    .pro-info a{
+        font-family: 'Montserrat', sans-serif;
+        padding: 2vh 10.5vh;
+    }
+}
+
+
+@media (min-width: 1440px){
+    
+}
